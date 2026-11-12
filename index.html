@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pit Lane Sim Racing Club: weekly sim races, rally stages, endurance teams and setup help for new drivers.">
+  <title>Pit Lane Sim Racing Club | Home</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar md:navbar-expand bg-1" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Pit Lane Sim Club</a>
+      <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      </button>
+      <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+        <div class="drawer-header">
+          <p class="drawer-title fw-semibold mb-0" id="navbarDrawerLabel">Menu</p>
+          <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close menu"></button>
+        </div>
+        <div class="drawer-body mb-2 md:mb-0">
+          <ul class="nav navbar-nav md:ms-auto">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Schedule</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </dialog>
+    </div>
+  </nav>
+
+  <main class="container py-4">
+    <h1>Pit Lane Sim Racing Club</h1>
+    <p class="text-lg mb-4">A student-run club for anyone who likes racing games with a wheel and pedals. Beginners and fast drivers race together every week.</p>
+
+      <div id="clubCarousel" class="carousel slide">
+        <div class="carousel-inner rounded-5">
+        <div class="carousel-item active">
+          <img src="images/slide-rigs.svg" class="d-block w-100 h-auto" alt="Three sim racing rigs side by side, each with a triple-monitor setup, a steering wheel and a bucket seat, in a dark room lit by the screens" width="1200" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="images/slide-circuit.svg" class="d-block w-100 h-auto" alt="Top-down map of a race circuit with red and white kerbs, a chequered start line and sector markers S1, S2 and S3" width="1200" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="images/slide-grid.svg" class="d-block w-100 h-auto" alt="Five red start lights glowing above a starting grid of twelve cars lined up in rows" width="1200" height="500">
+        </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-2">
+          <div>
+            <button class="btn-icon btn-sm" type="button" data-bs-target="#clubCarousel" data-bs-slide="prev">
+              <span class="carousel-icon-prev" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="btn-icon btn-sm" type="button" data-bs-target="#clubCarousel" data-bs-slide="next">
+              <span class="carousel-icon-next" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="carousel-indicators">
+          <button type="button" data-bs-target="#clubCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#clubCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#clubCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        </div>
+      </div>
+
+    <h2 class="mt-5 mb-4">More ways to race with us</h2>
+    <div class="row g-4">
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/card-sprint.svg" class="card-img-top h-auto" alt="Top-down view of a red car and a blue car racing side by side through a curve lined with red and white kerbs" width="800" height="500">
+            <div class="card-body vstack gap-3">
+              <h3 class="card-title">GT Sprint Nights</h3>
+              <p class="card-text">Short, close races in GT cars every week. Thirty minutes of racing, no pit stops, and a fresh track each night.</p>
+              <div class="accordion">
+                <details class="accordion-item">
+                  <summary class="accordion-header">
+                    Details
+                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 5 6 6 6-6"/></svg>
+                  </summary>
+                  <div class="accordion-body">Practice opens at 6:30 p.m. and qualifying runs for ten minutes before the race. Everyone uses the same fixed setup, so the result comes down to driving, not tuning.</div>
+                </details>
+              </div>
+              <button type="button" class="btn-solid theme-primary align-self-start mt-auto" data-bs-toggle="dialog" data-bs-target="#dialogSprint">Save a sprint seat</button>
+            </div>
+          </article>
+          <dialog class="dialog" id="dialogSprint" aria-labelledby="dialogSprintTitle">
+            <div class="dialog-header">
+              <h4 class="dialog-title" id="dialogSprintTitle">GT Sprint Nights</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+            </div>
+            <div class="dialog-body">
+              <p>Seats fill up fast. Send us a note on the Contact page and we will hold one of the 20 grid spots for you this week.</p>
+            </div>
+            <div class="dialog-footer">
+              <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+            </div>
+          </dialog>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/card-rally.svg" class="card-img-top h-auto" alt="A red rally car kicking up dust on a winding gravel road through pine trees, with mountains behind" width="800" height="500">
+            <div class="card-body vstack gap-3">
+              <h3 class="card-title">Gravel Rally Sundays</h3>
+              <p class="card-text">Point-to-point stages on loose surfaces. You race the clock, not each other, so it is a relaxed way to learn car control.</p>
+              <div class="accordion">
+                <details class="accordion-item">
+                  <summary class="accordion-header">
+                    Details
+                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 5 6 6 6-6"/></svg>
+                  </summary>
+                  <div class="accordion-body">Each Sunday has four stages. Your times are added together, and a co-driver from the club can read pace notes to you over voice chat if you want one.</div>
+                </details>
+              </div>
+              <button type="button" class="btn-solid theme-primary align-self-start mt-auto" data-bs-toggle="dialog" data-bs-target="#dialogRally">Try a rally stage</button>
+            </div>
+          </article>
+          <dialog class="dialog" id="dialogRally" aria-labelledby="dialogRallyTitle">
+            <div class="dialog-header">
+              <h4 class="dialog-title" id="dialogRallyTitle">Gravel Rally Sundays</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+            </div>
+            <div class="dialog-body">
+              <p>No rally experience needed. Pick the Rally option on our Contact form and we will pair you with a co-driver for your first event.</p>
+            </div>
+            <div class="dialog-footer">
+              <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+            </div>
+          </dialog>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/card-endurance.svg" class="card-img-top h-auto" alt="A night-time race track lit only by two headlights, under a starry sky, with a clock face in the corner" width="800" height="500">
+            <div class="card-body vstack gap-3">
+              <h3 class="card-title">6-Hour Endurance Cup</h3>
+              <p class="card-text">Teams of three share one car through day, dusk and night. Strategy, fuel and clean driver swaps decide who wins.</p>
+              <div class="accordion">
+                <details class="accordion-item">
+                  <summary class="accordion-header">
+                    Details
+                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 5 6 6 6-6"/></svg>
+                  </summary>
+                  <div class="accordion-body">Each driver must complete at least one stint of 90 minutes. Teams plan pit windows together on a shared sheet before the race starts.</div>
+                </details>
+              </div>
+              <button type="button" class="btn-solid theme-primary align-self-start mt-auto" data-bs-toggle="dialog" data-bs-target="#dialogEndurance">Build a team</button>
+            </div>
+          </article>
+          <dialog class="dialog" id="dialogEndurance" aria-labelledby="dialogEnduranceTitle">
+            <div class="dialog-header">
+              <h4 class="dialog-title" id="dialogEnduranceTitle">6-Hour Endurance Cup</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+            </div>
+            <div class="dialog-body">
+              <p>The next cup runs once a term. Tell us if you already have teammates, or we can place you on a team that needs a third driver.</p>
+            </div>
+            <div class="dialog-footer">
+              <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+            </div>
+          </dialog>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/card-drift.svg" class="card-img-top h-auto" alt="A red car sliding sideways around a painted arc, leaving a long trail of white tire smoke" width="800" height="500">
+            <div class="card-body vstack gap-3">
+              <h3 class="card-title">Tandem Drift Jam</h3>
+              <p class="card-text">Not about lap times at all. Drivers pair up and follow each other sideways, scored on angle, line and how close they stay.</p>
+              <div class="accordion">
+                <details class="accordion-item">
+                  <summary class="accordion-header">
+                    Details
+                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 5 6 6 6-6"/></svg>
+                  </summary>
+                  <div class="accordion-body">Judges score the lead car on line and angle, and the chase car on how closely it copies the lead. Drivers then swap places and run again.</div>
+                </details>
+              </div>
+              <button type="button" class="btn-solid theme-primary align-self-start mt-auto" data-bs-toggle="dialog" data-bs-target="#dialogDrift">Join the drift jam</button>
+            </div>
+          </article>
+          <dialog class="dialog" id="dialogDrift" aria-labelledby="dialogDriftTitle">
+            <div class="dialog-header">
+              <h4 class="dialog-title" id="dialogDriftTitle">Tandem Drift Jam</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+            </div>
+            <div class="dialog-body">
+              <p>Bring a wheel with a handbrake button if you have one. We run a short warm-up session so new drifters can practise solo first.</p>
+            </div>
+            <div class="dialog-footer">
+              <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+            </div>
+          </dialog>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/card-openwheel.svg" class="card-img-top h-auto" alt="Top-down view of a red and a blue single-seater race car on a straight bordered by red and white kerbs" width="800" height="500">
+            <div class="card-body vstack gap-3">
+              <h3 class="card-title">Open-Wheel Ladder</h3>
+              <p class="card-text">Climb from slower junior formula cars to fast single-seaters as your race results and safety rating improve.</p>
+              <div class="accordion">
+                <details class="accordion-item">
+                  <summary class="accordion-header">
+                    Details
+                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 5 6 6 6-6"/></svg>
+                  </summary>
+                  <div class="accordion-body">There are three tiers. You move up after finishing three races in a tier with no more than two incident points per race.</div>
+                </details>
+              </div>
+              <button type="button" class="btn-solid theme-primary align-self-start mt-auto" data-bs-toggle="dialog" data-bs-target="#dialogOpenWheel">Start on the ladder</button>
+            </div>
+          </article>
+          <dialog class="dialog" id="dialogOpenWheel" aria-labelledby="dialogOpenWheelTitle">
+            <div class="dialog-header">
+              <h4 class="dialog-title" id="dialogOpenWheelTitle">Open-Wheel Ladder</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+            </div>
+            <div class="dialog-body">
+              <p>Everyone begins in the junior tier. Send us your preferred race night and we will add you to the next ladder round.</p>
+            </div>
+            <div class="dialog-footer">
+              <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+            </div>
+          </dialog>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/card-clinic.svg" class="card-img-top h-auto" alt="A steering wheel next to a set of three pedals, the basic sim racing controls covered in the setup clinic" width="800" height="500">
+            <div class="card-body vstack gap-3">
+              <h3 class="card-title">Rookie Setup Clinic</h3>
+              <p class="card-text">New to sim racing? Bring your wheel and pedals, and club members will help you set them up so the car feels right.</p>
+              <div class="accordion">
+                <details class="accordion-item">
+                  <summary class="accordion-header">
+                    Details
+                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 5 6 6 6-6"/></svg>
+                  </summary>
+                  <div class="accordion-body">We cover wheel rotation, force feedback strength, pedal calibration and seating position. Sessions are small, with one helper for every three rookies.</div>
+                </details>
+              </div>
+              <button type="button" class="btn-solid theme-primary align-self-start mt-auto" data-bs-toggle="dialog" data-bs-target="#dialogClinic">Book a clinic spot</button>
+            </div>
+          </article>
+          <dialog class="dialog" id="dialogClinic" aria-labelledby="dialogClinicTitle">
+            <div class="dialog-header">
+              <h4 class="dialog-title" id="dialogClinicTitle">Rookie Setup Clinic</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+            </div>
+            <div class="dialog-body">
+              <p>Clinics run on the first Saturday of each month. No equipment yet? You can try one of the club rigs during the session.</p>
+            </div>
+            <div class="dialog-footer">
+              <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+            </div>
+          </dialog>
+        </div>
+    </div>
+  </main>
+
+  <footer class="bg-1 border-top py-4 mt-5">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 Pit Lane Sim Racing Club. A fictional club built for CCT360 Lab 6. All pictures including favicon have been AI generated for this site.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

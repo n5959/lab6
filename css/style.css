@@ -1,0 +1,20 @@
+:root {
+  --bs-primary-base: #c1121f;
+  --bs-primary-bg: var(--bs-primary-base);
+  --bs-primary-contrast: #ffffff;
+  --bs-primary-fg: light-dark(#a10f1a, #ff8a8f);
+  --bs-primary-fg-emphasis: light-dark(#6b0a11, #ffd1d3);
+  --bs-primary-bg-subtle: light-dark(#fde8e9, #3a0609);
+  --bs-primary-bg-muted: light-dark(#f9c9cc, #5c0b11);
+  --bs-primary-border: light-dark(#f19ca2, #8f121b);
+  --bs-primary-focus-ring: color-mix(in oklch, #c1121f 50%, transparent);
+}
+
+.btn-solid.theme-primary {
+  --bs-btn-hover-bg: #9b0e18;
+  --bs-btn-hover-border-color: #9b0e18;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-active-bg: #780b13;
+  --bs-btn-active-border-color: #780b13;
+  --bs-btn-active-color: #ffffff;
+}

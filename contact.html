@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Pit Lane Sim Racing Club to join an event, book a setup clinic or ask a question.">
+  <title>Contact Pit Lane Sim Racing Club</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar md:navbar-expand bg-1" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Pit Lane Sim Club</a>
+      <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      </button>
+      <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+        <div class="drawer-header">
+          <p class="drawer-title fw-semibold mb-0" id="navbarDrawerLabel">Menu</p>
+          <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close menu"></button>
+        </div>
+        <div class="drawer-body mb-2 md:mb-0">
+          <ul class="nav navbar-nav md:ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Schedule</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </dialog>
+    </div>
+  </nav>
+
+  <main class="container py-4">
+    <h1>Contact the club</h1>
+    <p class="text-lg mb-4">Want a seat on the grid or help with your setup? Fill in the form and a club organizer will reply within two days.</p>
+
+    <form class="row g-3">
+      <div class="md:col-6">
+        <div class="form-field">
+          <label for="firstName" class="form-label">First name</label>
+          <input type="text" class="form-control" id="firstName" name="firstName" autocomplete="given-name" required>
+        </div>
+      </div>
+      <div class="md:col-6">
+        <div class="form-field">
+          <label for="lastName" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="lastName" name="lastName" autocomplete="family-name" required>
+        </div>
+      </div>
+      <div class="md:col-6">
+        <div class="form-field">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" autocomplete="email" required>
+        </div>
+      </div>
+      <div class="md:col-6">
+        <div class="form-field">
+          <label for="eventInterest" class="form-label">Event you are interested in</label>
+          <select class="form-control" id="eventInterest" name="eventInterest" required>
+            <option value="" selected>Choose one&hellip;</option>
+            <option value="sprint">GT Sprint Nights</option>
+            <option value="rally">Gravel Rally Sundays</option>
+            <option value="endurance">6-Hour Endurance Cup</option>
+            <option value="drift">Tandem Drift Jam</option>
+            <option value="openwheel">Open-Wheel Ladder</option>
+            <option value="clinic">Rookie Setup Clinic</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-field">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-field">
+          <input type="checkbox" id="consent" name="consent" class="check" required>
+          <label for="consent">I agree to be contacted by email about club events.</label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn-solid theme-primary">Send message</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="bg-1 border-top py-4 mt-5">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 Pit Lane Sim Racing Club. A fictional club built for CCT360 Lab 6. All pictures including favicon have been AI generated for this site.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
